@@ -10,3 +10,17 @@ if (subjects == "Art Subject"){
         console.log("As a General Student, you will be taking the following subjects: English, Mathematics")
 }
 
+
+function findNearestPowerOf2(num) {
+    let pwr = 1;
+    while (pwr < num) {
+      pwr *= 2;
+    }
+    if (num - (pwr / 2) < pwr - num) {
+      pwr /= 2;
+    }
+    console.log(`The number ${pwr} is the power of 2 nearest to ${num}.`);
+  }
+
+  findNearestPowerOf2(10)
+  
